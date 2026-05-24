@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodMeals - еда под твое настроение</title>
+    <meta
+      name="description"
+      content="MoodMeals - статичный landing page о веб-приложении, которое рекомендует блюда по твоему настроению."
+    />
+    <meta property="og:title" content="MoodMeals - еда под твое настроение" />
+    <meta
+      property="og:description"
+      content="Не знаешь, что поесть? Выбери настроение и получи идею блюда: уютную, быструю или заряжающую энергией."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta name="theme-color" content="#fb8c52" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23fff4df'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-size='36'%3E%F0%9F%8D%B2%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Основная навигация">
+      <nav class="navbar">
+        <a class="brand" href="#top" aria-label="Начало MoodMeals">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" role="img">
+              <path d="M7 16c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9Z" />
+              <path d="M12 14c2-3 6-3 8 0" />
+              <path d="M11 19h10" />
+            </svg>
+          </span>
+          <span>MoodMeals</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" data-nav-links>
+          <a href="#how-it-works">Как это работает</a>
+          <a href="#moods">Настроения</a>
+          <a href="#recipes">Рецепты</a>
+          <a href="#reviews">Отзывы</a>
+          <a class="button button--small" href="#moods">Найти блюдо</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__bg"
+          src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1800&q=82"
+          alt="Тепло освещенный стол с яркими блюдами"
+        />
+        <div class="hero__overlay"></div>
+        <div class="hero__content section-shell">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Выбор еды по настроению</p>
+            <h1 id="hero-title">Не знаешь, что поесть? Начни с того, как ты себя чувствуешь.</h1>
+            <p class="hero__text">
+              MoodMeals подбирает блюда под твое настроение - от уютной еды после тяжелого
+              дня до быстрых идей, когда готовить совсем лень.
+            </p>
+            <div class="hero__actions">
+              <a class="button" href="#moods">Найти мое блюдо</a>
+              <a class="button button--ghost" href="#how-it-works">Как это работает?</a>
+            </div>
+          </div>
+
+          <div class="app-preview reveal" aria-label="Превью приложения MoodMeals">
+            <div class="floating floating--one" aria-hidden="true">🍜</div>
+            <div class="floating floating--two" aria-hidden="true">✨</div>
+            <div class="floating floating--three" aria-hidden="true">🥑</div>
+            <div class="phone-shell">
+              <div class="phone-shell__top">
+                <span></span>
+                <strong>MoodMeals</strong>
+                <span></span>
+              </div>
+              <div class="phone-card">
+                <p class="phone-card__label">Сегодня</p>
+                <h2>Как ты себя чувствуешь?</h2>
+                <div class="mini-moods" aria-hidden="true">
+                  <span>😴 Усталость</span>
+                  <span>🛋 Лень</span>
+                  <span>⚡ Энергия</span>
+                  <span>🧡 Уют</span>
+                  <span>🎉 Побаловать себя</span>
+                </div>
+              </div>
+              <div class="phone-recipe">
+                <img
+                  src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                  alt="Кремовый томатный суп в миске"
+                />
+                <div>
+                  <span>Уютный выбор</span>
+                  <strong>Томатный суп с тостом</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem section-shell" aria-labelledby="problem-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Реальная проблема</p>
+          <h2 id="problem-title">Иногда сложнее не готовить, а придумать, что готовить.</h2>
+        </div>
+        <div class="problem-grid">
+          <article class="info-card reveal">
+            <span class="icon-bubble icon-bubble--pulse" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h7" /></svg>
+            </span>
+            <h3>Слишком много вариантов</h3>
+            <p>В интернете полно рецептов, но после долгого дня еще один марафон поиска совсем не радует.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="icon-bubble icon-bubble--float" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v8l5 3M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+            </span>
+            <h3>Мало энергии</h3>
+            <p>Когда голова устала, даже простой вопрос "что поесть?" становится слишком тяжелым.</p>
+          </article>
+          <article class="info-card reveal">
+            <span class="icon-bubble icon-bubble--glow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z" /></svg>
+            </span>
+            <h3>Хочется уюта</h3>
+            <p>Быстрое решение тоже может быть теплым, эстетичным и подходящим именно твоему дню.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mood-section" id="moods" aria-labelledby="moods-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading--center reveal">
+            <p class="eyebrow">Выбор настроения</p>
+            <h2 id="moods-title">Выбери настроение - мы предложим блюдо.</h2>
+          </div>
+
+          <div class="mood-layout">
+            <div class="mood-grid" role="list" aria-label="Варианты настроения">
+              <button class="mood-card is-active reveal" type="button" data-mood="tired" aria-pressed="true">
+                <span class="mood-card__emoji" aria-hidden="true">😴</span>
+                <span class="mood-card__title">Усталость</span>
+                <span class="mood-card__text">Что-то теплое, простое и без лишних усилий.</span>
+              </button>
+              <button class="mood-card reveal" type="button" data-mood="lazy" aria-pressed="false">
+                <span class="mood-card__emoji" aria-hidden="true">🛋</span>
+                <span class="mood-card__title">Лень готовить</span>
+                <span class="mood-card__text">До 10 минут. Минимум посуды. Максимум удобства.</span>
+              </button>
+              <button class="mood-card reveal" type="button" data-mood="energy" aria-pressed="false">
+                <span class="mood-card__emoji" aria-hidden="true">⚡</span>
+                <span class="mood-card__title">Нужна энергия</span>
+                <span class="mood-card__text">Легкое, питательное и сытное блюдо для продуктивного дня.</span>
+              </button>
+              <button class="mood-card reveal" type="button" data-mood="cozy" aria-pressed="false">
+                <span class="mood-card__emoji" aria-hidden="true">🧡</span>
+                <span class="mood-card__title">Хочу уюта</span>
+                <span class="mood-card__text">Еда, которая ощущается как объятие изнутри.</span>
+              </button>
+              <button class="mood-card reveal" type="button" data-mood="treat" aria-pressed="false">
+                <span class="mood-card__emoji" aria-hidden="true">🎉</span>
+                <span class="mood-card__title">Хочу побаловать себя</span>
+                <span class="mood-card__text">Когда хочется не просто поесть, а устроить себе маленький праздник.</span>
+              </button>
+            </div>
+
+            <article class="recommendation reveal" aria-live="polite">
+              <div class="recommendation__image-wrap">
+                <img
+                  id="meal-image"
+                  src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+                  alt="Кремовый томатный суп с тостом"
+                />
+                <span id="meal-effect" class="effect-pill">уют + тепло</span>
+              </div>
+              <div class="recommendation__body">
+                <p id="meal-kicker" class="recommendation__kicker">Рекомендация MoodMeal</p>
+                <h3 id="meal-title">Кремовый томатный суп с сырным тостом</h3>
+                <p id="meal-description">
+                  Нежный, сытный и почти без стресса. Отлично подходит для вечера, когда хочется
+                  чего-то теплого, но не сложного.
+                </p>
+                <div class="meal-meta" aria-label="Информация о блюде">
+                  <span><strong id="meal-time">20 мин</strong> время</span>
+                  <span><strong id="meal-level">Легко</strong> уровень</span>
+                </div>
+                <div class="recipe-details" id="recipe-details" hidden>
+                  <h4>Быстрая идея</h4>
+                  <p id="recipe-steps">
+                    Разогрей томатный суп, добавь немного сливок и подай с поджаренным сырным тостом.
+                  </p>
+                </div>
+                <div class="recommendation__actions">
+                  <button class="button" type="button" id="show-recipe">Показать рецепт</button>
+                  <button class="button button--ghost-dark" type="button" id="suggest-another">Предложить другое</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps section-shell" id="how-it-works" aria-labelledby="steps-title">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow">Без стресса</p>
+          <h2 id="steps-title">Как это работает?</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span class="step-card__number">1</span>
+            <span class="icon-bubble icon-bubble--float" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 12h8M12 8v8M20 12a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+            </span>
+            <h3>Выбери, как ты себя чувствуешь</h3>
+            <p>Начни с себя, а не со списка ингредиентов.</p>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-card__number">2</span>
+            <span class="icon-bubble icon-bubble--glow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </span>
+            <h3>Получи рекомендацию блюда</h3>
+            <p>Одно понятное предложение со временем, уровнем и mood-эффектом.</p>
+          </article>
+          <article class="step-card reveal">
+            <span class="step-card__number">3</span>
+            <span class="icon-bubble icon-bubble--rotate" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h16M7 7v13h10V7M9 4h6l1 3H8l1-3Z" /></svg>
+            </span>
+            <h3>Готовь без стресса</h3>
+            <p>Меньше скроллинга, больше спокойной еды.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="recipes" id="recipes" aria-labelledby="recipes-title">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Галерея рецептов</p>
+            <h2 id="recipes-title">Блюда для разных дней.</h2>
+          </div>
+          <div class="recipe-grid">
+            <article class="recipe-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+                alt="Томатный суп в миске"
+                loading="lazy"
+              />
+              <div class="recipe-card__body">
+                <span class="tag">Уют</span>
+                <h3>Кремовый томатный суп</h3>
+                <p>20 мин - нежная уютная еда, когда нужно тепло.</p>
+              </div>
+            </article>
+            <article class="recipe-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+                alt="Полезный боул с овощами"
+                loading="lazy"
+              />
+              <div class="recipe-card__body">
+                <span class="tag tag--green">Энергия</span>
+                <h3>Рисовый боул с овощами</h3>
+                <p>25 мин - цвета, белок и сытость для продуктивного дня.</p>
+              </div>
+            </article>
+            <article class="recipe-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=800&q=80"
+                alt="Тортилья с начинкой на тарелке"
+                loading="lazy"
+              />
+              <div class="recipe-card__body">
+                <span class="tag tag--peach">Быстро</span>
+                <h3>Тортилья с яйцом</h3>
+                <p>10 мин - мало посуды, много вкуса и никакого хаоса.</p>
+              </div>
+            </article>
+            <article class="recipe-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80"
+                alt="Панкейки с медом и фруктами"
+                loading="lazy"
+              />
+              <div class="recipe-card__body">
+                <span class="tag tag--pink">Сладкое</span>
+                <h3>Банановые панкейки</h3>
+                <p>18 мин - мягкие, сладкие и идеальные для медленного утра.</p>
+              </div>
+            </article>
+            <article class="recipe-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=800&q=80"
+                alt="Домашний бургер с картофелем"
+                loading="lazy"
+              />
+              <div class="recipe-card__body">
+                <span class="tag tag--orange">Побаловать себя</span>
+                <h3>Домашний бургер</h3>
+                <p>35 мин - для маленького праздника, когда хочется порадовать себя по-настоящему.</p>
+              </div>
+            </article>
+            <article class="recipe-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80"
+                alt="Молодые люди едят вместе в уютной атмосфере"
+                loading="lazy"
+              />
+              <div class="recipe-card__body">
+                <span class="tag tag--green">Для компании</span>
+                <h3>Идея ужина с друзьями</h3>
+                <p>30 мин - легко делиться и приятно готовить вместе.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section-shell" id="reviews" aria-labelledby="reviews-title">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow">Отзывы</p>
+          <h2 id="reviews-title">Когда выбор наконец становится простым.</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal">
+            <div class="avatar" aria-hidden="true">IE</div>
+            <p>"После пар у меня уже нет терпения искать рецепты. MoodMeals ощущается как друг, который просто говорит: приготовь вот это."</p>
+            <strong>Иева, студентка</strong>
+          </article>
+          <article class="review-card reveal">
+            <div class="avatar avatar--green" aria-hidden="true">MK</div>
+            <p>"Я работаю из дома и часто пропускаю обед. Выбор по настроению помогает быстрее решить и нормально поесть."</p>
+            <strong>Мантас, UX-дизайнер</strong>
+          </article>
+          <article class="review-card reveal">
+            <div class="avatar avatar--pink" aria-hidden="true">SA</div>
+            <p>"Мне нравится, что не нужно заранее знать, чего я хочу. Выбираю настроение, получаю идею - и все."</p>
+            <strong>Сауле, не фанат поиска рецептов</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-title">
+        <div class="section-shell final-cta__inner reveal">
+          <p class="eyebrow">Готово, когда готов ты</p>
+          <h2 id="final-title">Что сегодня съест твое настроение?</h2>
+          <p>
+            Выбери, как ты себя чувствуешь, и получи идею блюда без долгого скроллинга, стресса и
+            вопроса "что поесть?"
+          </p>
+          <a class="button" href="#moods">Найти мой MoodMeal</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <a class="brand" href="#top" aria-label="Начало MoodMeals">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" role="img">
+                <path d="M7 16c0-5 4-9 9-9s9 4 9 9-4 9-9 9-9-4-9-9Z" />
+                <path d="M12 14c2-3 6-3 8 0" />
+                <path d="M11 19h10" />
+              </svg>
+            </span>
+            <span>MoodMeals</span>
+          </a>
+          <p>Фиктивное веб-приложение, которое помогает выбрать блюдо по настроению.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#how-it-works">Как это работает</a>
+          <a href="#moods">Настроения</a>
+          <a href="#recipes">Рецепты</a>
+          <a href="#reviews">Отзывы</a>
+        </div>
+        <div class="footer-note">
+          <p>Сделано для студенческого landing page проекта</p>
+          <p>Фото с Unsplash</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
