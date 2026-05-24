@@ -130,6 +130,7 @@ const mealDescription = document.querySelector("#meal-description");
 const mealTime = document.querySelector("#meal-time");
 const mealLevel = document.querySelector("#meal-level");
 const mealSteps = document.querySelector("#recipe-steps");
+const mealMoodLabel = document.querySelector("#meal-mood-label");
 const recipeDetails = document.querySelector("#recipe-details");
 const showRecipeButton = document.querySelector("#show-recipe");
 const suggestAnotherButton = document.querySelector("#suggest-another");
@@ -179,6 +180,14 @@ designButtons.forEach((button) => {
 applyDesign(loadDesignChoice() || document.body.dataset.design, false);
 
 let currentMood = "tired";
+const moodLabels = {
+  tired: "Я выжат",
+  lazy: "Chill-mode",
+  energy: "Нужен заряд",
+  cozy: "Хочу тепла",
+  treat: "Маленький праздник"
+};
+
 const mealIndexes = {
   tired: 0,
   lazy: 0,
@@ -203,6 +212,7 @@ function renderMeal(mood, index = mealIndexes[mood]) {
   mealTime.textContent = meal.time;
   mealLevel.textContent = meal.level;
   mealSteps.textContent = meal.steps;
+  mealMoodLabel.textContent = `Под настроение: ${moodLabels[mood]}`;
   recipeDetails.hidden = true;
   showRecipeButton.textContent = "Показать рецепт";
 }
@@ -210,8 +220,14 @@ function renderMeal(mood, index = mealIndexes[mood]) {
 function setActiveMood(selectedButton) {
   moodButtons.forEach((button) => {
     const isSelected = button === selectedButton;
+    const hint = button.querySelector(".mood-card__hint");
+
     button.classList.toggle("is-active", isSelected);
     button.setAttribute("aria-pressed", String(isSelected));
+
+    if (hint) {
+      hint.textContent = isSelected ? "Выбрано" : "Выбрать";
+    }
   });
 }
 

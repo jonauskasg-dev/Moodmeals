@@ -187,28 +187,38 @@
             <div class="mood-grid" role="list" aria-label="Варианты настроения">
               <button class="mood-card is-active reveal" type="button" data-mood="tired" aria-pressed="true">
                 <span class="mood-card__emoji" aria-hidden="true">😴</span>
-                <span class="mood-card__title">Усталость</span>
-                <span class="mood-card__text">Что-то теплое, простое и без лишних усилий.</span>
+                <span class="mood-card__title">Я выжат</span>
+                <span class="mood-card__text">Теплая еда, мягкий вкус и ноль сложных решений.</span>
+                <span class="mood-card__feeling">Тишина + забота</span>
+                <span class="mood-card__hint">Выбрано</span>
               </button>
               <button class="mood-card reveal" type="button" data-mood="lazy" aria-pressed="false">
                 <span class="mood-card__emoji" aria-hidden="true">🛋</span>
-                <span class="mood-card__title">Лень готовить</span>
-                <span class="mood-card__text">До 10 минут. Минимум посуды. Максимум удобства.</span>
+                <span class="mood-card__title">Chill-mode</span>
+                <span class="mood-card__text">До 10 минут, минимум посуды и можно обратно на диван.</span>
+                <span class="mood-card__feeling">Быстро + удобно</span>
+                <span class="mood-card__hint">Выбрать</span>
               </button>
               <button class="mood-card reveal" type="button" data-mood="energy" aria-pressed="false">
                 <span class="mood-card__emoji" aria-hidden="true">⚡</span>
-                <span class="mood-card__title">Нужна энергия</span>
-                <span class="mood-card__text">Легкое, питательное и сытное блюдо для продуктивного дня.</span>
+                <span class="mood-card__title">Нужен заряд</span>
+                <span class="mood-card__text">Питательно, ярко и без тяжелого ощущения после еды.</span>
+                <span class="mood-card__feeling">Фокус + топливо</span>
+                <span class="mood-card__hint">Выбрать</span>
               </button>
               <button class="mood-card reveal" type="button" data-mood="cozy" aria-pressed="false">
                 <span class="mood-card__emoji" aria-hidden="true">🧡</span>
-                <span class="mood-card__title">Хочу уюта</span>
-                <span class="mood-card__text">Еда, которая ощущается как объятие изнутри.</span>
+                <span class="mood-card__title">Хочу тепла</span>
+                <span class="mood-card__text">Еда, которая ощущается как спокойный вечер и плед.</span>
+                <span class="mood-card__feeling">Мягко + сладко</span>
+                <span class="mood-card__hint">Выбрать</span>
               </button>
               <button class="mood-card reveal" type="button" data-mood="treat" aria-pressed="false">
                 <span class="mood-card__emoji" aria-hidden="true">🎉</span>
-                <span class="mood-card__title">Хочу побаловать себя</span>
-                <span class="mood-card__text">Когда хочется не просто поесть, а устроить себе маленький праздник.</span>
+                <span class="mood-card__title">Маленький праздник</span>
+                <span class="mood-card__text">Когда хочется не просто поесть, а сказать себе: я заслужил.</span>
+                <span class="mood-card__feeling">Радость + награда</span>
+                <span class="mood-card__hint">Выбрать</span>
               </button>
             </div>
 
@@ -219,10 +229,23 @@
                   src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
                   alt="Кремовый томатный суп с тостом"
                 />
+                <div class="recommendation__brand-ribbon" aria-hidden="true">
+                  <span>MM</span>
+                  MoodMeal pick
+                </div>
                 <span id="meal-effect" class="effect-pill">уют + тепло</span>
               </div>
               <div class="recommendation__body">
-                <p id="meal-kicker" class="recommendation__kicker">Рекомендация MoodMeal</p>
+                <div class="recommendation__brand-head">
+                  <div class="recommendation__brand-lockup">
+                    <span class="recommendation__mark" aria-hidden="true">🍲</span>
+                    <div>
+                      <p id="meal-kicker" class="recommendation__kicker">Рекомендация MoodMeal</p>
+                      <strong id="meal-mood-label">Под настроение: Я выжат</strong>
+                    </div>
+                  </div>
+                  <span class="recommendation__score" aria-label="Совпадение 96 процентов">96% match</span>
+                </div>
                 <h3 id="meal-title">Кремовый томатный суп с сырным тостом</h3>
                 <p id="meal-description">
                   Нежный, сытный и почти без стресса. Отлично подходит для вечера, когда хочется
@@ -307,7 +330,7 @@
                 loading="lazy"
               />
               <div class="recipe-card__body">
-                <span class="tag tag--green">Энергия</span>
+                <span class="tag tag--berry">Энергия</span>
                 <h3>Рисовый боул с овощами</h3>
                 <p>25 мин - цвета, белок и сытость для продуктивного дня.</p>
               </div>
@@ -355,7 +378,7 @@
                 loading="lazy"
               />
               <div class="recipe-card__body">
-                <span class="tag tag--green">Для компании</span>
+                <span class="tag tag--berry">Для компании</span>
                 <h3>Идея ужина с друзьями</h3>
                 <p>30 мин - легко делиться и приятно готовить вместе.</p>
               </div>
@@ -376,7 +399,7 @@
             <strong>Иева, студентка</strong>
           </article>
           <article class="review-card reveal">
-            <div class="avatar avatar--green" aria-hidden="true">MK</div>
+            <div class="avatar avatar--berry" aria-hidden="true">MK</div>
             <p>"Я работаю из дома и часто пропускаю обед. Выбор по настроению помогает быстрее решить и нормально поесть."</p>
             <strong>Мантас, UX-дизайнер</strong>
           </article>
@@ -429,6 +452,6 @@
       </div>
     </footer>
 
-    <script src="script.js?v=design-switcher"></script>
+    <script src="script.js?v=brand-card"></script>
   </body>
 </html>

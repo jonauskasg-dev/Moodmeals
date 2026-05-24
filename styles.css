@@ -6,16 +6,16 @@
   --color-text: #222222;
   --color-muted: #6a5b53;
   --color-primary: #ff385c;
-  --color-primary-dark: #d70466;
+  --color-primary-dark: #b91c45;
   --color-coral: #ff5a5f;
   --color-rose: #ffb4a2;
-  --color-green: #00a699;
-  --color-gold: #ffb400;
+  --color-berry: #d94d63;
+  --color-peach: #ffc2a1;
   --color-line: rgba(34, 34, 34, 0.1);
-  --gradient-cta: linear-gradient(135deg, #ff385c 0%, #e61e4d 48%, #bd1e59 100%);
+  --gradient-cta: linear-gradient(135deg, #ff385c 0%, #e61e4d 48%, #b91c45 100%);
   --gradient-soft: linear-gradient(135deg, rgba(255, 248, 243, 0.96), rgba(255, 236, 230, 0.9));
-  --shadow-soft: 0 14px 38px rgba(34, 34, 34, 0.08);
-  --shadow-hover: 0 22px 54px rgba(34, 34, 34, 0.14);
+  --shadow-soft: 0 8px 22px rgba(34, 34, 34, 0.06);
+  --shadow-hover: 0 12px 30px rgba(34, 34, 34, 0.1);
   --radius-sm: 14px;
   --radius-card: 22px;
   --radius-pill: 999px;
@@ -35,7 +35,7 @@ body {
   margin: 0;
   background:
     radial-gradient(circle at 8% 4%, rgba(255, 56, 92, 0.1), transparent 24rem),
-    radial-gradient(circle at 86% 12%, rgba(0, 166, 153, 0.1), transparent 24rem),
+    radial-gradient(circle at 86% 12%, rgba(255, 180, 162, 0.16), transparent 24rem),
     var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
@@ -43,53 +43,53 @@ body {
 }
 
 body[data-design="soft"] {
-  --color-bg: #fff6e9;
-  --color-bg-soft: #fffaf2;
+  --color-bg: #fff6ef;
+  --color-bg-soft: #fffaf7;
   --color-surface: rgba(255, 255, 255, 0.76);
-  --color-text: #241814;
-  --color-muted: #6f5f56;
-  --color-primary: #fb7b4d;
-  --color-primary-dark: #d94d37;
-  --color-coral: #fb7b4d;
-  --color-rose: #f48193;
-  --color-green: #82b874;
-  --color-gold: #ffc65a;
-  --color-line: rgba(73, 46, 30, 0.14);
-  --gradient-cta: linear-gradient(135deg, #ff7a50 0%, #f64f7f 54%, #ffb84d 100%);
-  --gradient-soft: linear-gradient(135deg, rgba(255, 238, 216, 0.9), rgba(255, 244, 250, 0.86));
-  --shadow-soft: 0 18px 50px rgba(91, 55, 31, 0.14);
-  --shadow-hover: 0 22px 60px rgba(91, 55, 31, 0.2);
+  --color-text: #241b18;
+  --color-muted: #6f5f5a;
+  --color-primary: #ff5a5f;
+  --color-primary-dark: #b91c45;
+  --color-coral: #ff5a5f;
+  --color-rose: #ffb4a2;
+  --color-berry: #d94d63;
+  --color-peach: #ffc2a1;
+  --color-line: rgba(73, 46, 30, 0.12);
+  --gradient-cta: linear-gradient(135deg, #ff5a5f 0%, #e61e4d 55%, #b91c45 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(255, 246, 239, 0.92), rgba(255, 238, 232, 0.88));
+  --shadow-soft: 0 10px 26px rgba(91, 55, 31, 0.08);
+  --shadow-hover: 0 14px 34px rgba(91, 55, 31, 0.13);
   --radius-sm: 8px;
   --radius-card: 8px;
   background:
-    radial-gradient(circle at 12% 8%, rgba(255, 198, 90, 0.26), transparent 28rem),
-    radial-gradient(circle at 85% 18%, rgba(130, 184, 116, 0.18), transparent 24rem),
+    radial-gradient(circle at 12% 8%, rgba(255, 180, 162, 0.28), transparent 28rem),
+    radial-gradient(circle at 85% 18%, rgba(255, 56, 92, 0.1), transparent 24rem),
     var(--color-bg);
 }
 
 body[data-design="figma"] {
-  --color-bg: #f7f5ff;
+  --color-bg: #fff4f6;
   --color-bg-soft: #ffffff;
   --color-surface: rgba(255, 255, 255, 0.9);
-  --color-text: #141217;
-  --color-muted: #615b6f;
-  --color-primary: #7b61ff;
-  --color-primary-dark: #4d34d8;
-  --color-coral: #ff7262;
-  --color-rose: #ff5ab3;
-  --color-green: #18a957;
-  --color-gold: #ffcd29;
-  --color-line: rgba(20, 18, 23, 0.1);
-  --gradient-cta: linear-gradient(135deg, #7b61ff 0%, #ff5ab3 52%, #ffcd29 100%);
-  --gradient-soft: linear-gradient(135deg, rgba(123, 97, 255, 0.12), rgba(255, 90, 179, 0.1), rgba(255, 205, 41, 0.12));
-  --shadow-soft: 0 16px 44px rgba(65, 49, 139, 0.12);
-  --shadow-hover: 0 24px 60px rgba(65, 49, 139, 0.2);
+  --color-text: #1e171a;
+  --color-muted: #6b565e;
+  --color-primary: #ff385c;
+  --color-primary-dark: #b91c45;
+  --color-coral: #ff5a5f;
+  --color-rose: #ffb4a2;
+  --color-berry: #d94d63;
+  --color-peach: #ffc2a1;
+  --color-line: rgba(30, 23, 26, 0.1);
+  --gradient-cta: linear-gradient(135deg, #ff385c 0%, #e61e4d 50%, #ff8a76 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(255, 56, 92, 0.09), rgba(255, 180, 162, 0.12), rgba(255, 248, 243, 0.9));
+  --shadow-soft: 0 10px 28px rgba(185, 28, 69, 0.07);
+  --shadow-hover: 0 16px 38px rgba(185, 28, 69, 0.12);
   --radius-sm: 18px;
   --radius-card: 28px;
   background:
-    radial-gradient(circle at 9% 8%, rgba(123, 97, 255, 0.16), transparent 24rem),
-    radial-gradient(circle at 82% 12%, rgba(255, 90, 179, 0.15), transparent 24rem),
-    radial-gradient(circle at 58% 90%, rgba(255, 205, 41, 0.13), transparent 26rem),
+    radial-gradient(circle at 9% 8%, rgba(255, 56, 92, 0.14), transparent 24rem),
+    radial-gradient(circle at 82% 12%, rgba(255, 180, 162, 0.16), transparent 24rem),
+    radial-gradient(circle at 58% 90%, rgba(255, 90, 95, 0.1), transparent 26rem),
     var(--color-bg);
 }
 
@@ -117,8 +117,8 @@ button {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(255, 56, 92, 0.5);
-  outline-offset: 4px;
+  outline: 3px solid rgba(255, 56, 92, 0.78);
+  outline-offset: 5px;
 }
 
 .section-shell {
@@ -132,7 +132,7 @@ button {
   z-index: 30;
   border-bottom: 1px solid rgba(34, 34, 34, 0.08);
   background: rgba(255, 255, 255, 0.84);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(8px);
 }
 
 .navbar {
@@ -150,11 +150,11 @@ button {
   align-items: center;
   gap: 4px;
   margin-left: auto;
-  border: 1px solid var(--color-line);
+  border: 1px solid rgba(255, 56, 92, 0.18);
   border-radius: var(--radius-pill);
   padding: 4px;
   background: rgba(255, 255, 255, 0.84);
-  box-shadow: 0 10px 26px rgba(34, 34, 34, 0.06);
+  box-shadow: 0 4px 14px rgba(34, 34, 34, 0.05);
 }
 
 .design-switcher__button {
@@ -167,18 +167,31 @@ button {
   cursor: pointer;
   font-size: 0.78rem;
   font-weight: 900;
-  transition: background 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .design-switcher__button:hover {
-  color: var(--color-text);
+  background: rgba(255, 56, 92, 0.08);
+  color: var(--color-primary-dark);
   transform: translateY(-1px);
+}
+
+.design-switcher__button:focus,
+.design-switcher__button:focus-visible {
+  outline: 2px solid rgba(255, 56, 92, 0.9);
+  outline-offset: 2px;
 }
 
 .design-switcher__button.is-active {
   background: var(--gradient-cta);
   color: #fff;
-  box-shadow: 0 8px 18px rgba(255, 56, 92, 0.18);
+  box-shadow:
+    0 0 0 2px rgba(255, 56, 92, 0.18),
+    0 6px 16px rgba(255, 56, 92, 0.18);
 }
 
 .brand {
@@ -198,7 +211,7 @@ button {
   place-items: center;
   color: #fff;
   background: var(--gradient-cta);
-  box-shadow: 0 10px 24px rgba(255, 56, 92, 0.24);
+  box-shadow: 0 5px 14px rgba(255, 56, 92, 0.16);
 }
 
 .brand__mark svg {
@@ -288,16 +301,30 @@ button {
   border-radius: var(--radius-pill);
   background: var(--gradient-cta);
   color: #fff;
-  box-shadow: 0 14px 28px rgba(255, 56, 92, 0.24);
+  box-shadow: 0 8px 18px rgba(255, 56, 92, 0.16);
   cursor: pointer;
   font-weight: 800;
-  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
 }
 
 .button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 42px rgba(230, 30, 77, 0.3);
-  filter: saturate(1.06);
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 0 3px rgba(255, 56, 92, 0.14),
+    0 14px 30px rgba(230, 30, 77, 0.24);
+  filter: saturate(1.1);
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 3px solid rgba(255, 56, 92, 0.86);
+  outline-offset: 4px;
+  box-shadow:
+    0 0 0 6px rgba(255, 255, 255, 0.82),
+    0 0 0 9px rgba(255, 56, 92, 0.34);
 }
 
 .button--small {
@@ -312,13 +339,18 @@ button {
   background: rgba(255, 255, 255, 0.22);
   color: #fff;
   box-shadow: none;
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(5px);
 }
 
 .button--ghost-dark {
   border-color: var(--color-line);
   background: #fff;
   color: var(--color-text);
+}
+
+.button--ghost:hover,
+.button--ghost-dark:hover {
+  border-color: rgba(255, 56, 92, 0.44);
 }
 
 body[data-design="soft"] .site-header {
@@ -328,7 +360,7 @@ body[data-design="soft"] .site-header {
 
 body[data-design="figma"] .site-header {
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 8px 30px rgba(65, 49, 139, 0.08);
+  box-shadow: 0 4px 16px rgba(185, 28, 69, 0.05);
 }
 
 body[data-design="figma"] .brand__mark {
@@ -336,7 +368,9 @@ body[data-design="figma"] .brand__mark {
 }
 
 body[data-design="figma"] .design-switcher__button.is-active {
-  box-shadow: 0 8px 20px rgba(123, 97, 255, 0.24);
+  box-shadow:
+    0 0 0 2px rgba(185, 28, 69, 0.18),
+    0 6px 16px rgba(185, 28, 69, 0.16);
 }
 
 .hero {
@@ -359,7 +393,7 @@ body[data-design="figma"] .design-switcher__button.is-active {
   height: 100%;
   object-fit: cover;
   filter: saturate(1.04) contrast(1.02);
-  z-index: -3;
+  z-index: -4;
 }
 
 .hero__overlay {
@@ -377,8 +411,8 @@ body[data-design="soft"] .hero__overlay {
 
 body[data-design="figma"] .hero__overlay {
   background:
-    linear-gradient(90deg, rgba(20, 18, 23, 0.72) 0%, rgba(51, 37, 111, 0.48) 44%, rgba(255, 90, 179, 0.08) 100%),
-    linear-gradient(180deg, rgba(123, 97, 255, 0.08), rgba(247, 245, 255, 0.58));
+    linear-gradient(90deg, rgba(30, 23, 26, 0.72) 0%, rgba(91, 35, 46, 0.48) 44%, rgba(255, 56, 92, 0.08) 100%),
+    linear-gradient(180deg, rgba(255, 56, 92, 0.07), rgba(255, 244, 246, 0.58));
 }
 
 .hero__content {
@@ -415,7 +449,7 @@ body[data-design="soft"] .final-cta .eyebrow {
 
 body[data-design="figma"] .hero .eyebrow,
 body[data-design="figma"] .final-cta .eyebrow {
-  color: #ffcd29;
+  color: #ffc2a1;
 }
 
 h1,
@@ -467,7 +501,7 @@ h3 {
   gap: 0;
   padding: 9px;
   background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
   color: var(--color-text);
 }
 
@@ -496,12 +530,21 @@ h3 {
   color: #fff;
   font-size: 1.35rem;
   font-weight: 900;
-  box-shadow: 0 10px 24px rgba(255, 56, 92, 0.28);
+  box-shadow: 0 6px 16px rgba(255, 56, 92, 0.18);
   transition: transform 180ms ease;
 }
 
 .hero-search a:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
+  box-shadow:
+    0 0 0 4px rgba(255, 56, 92, 0.14),
+    0 8px 20px rgba(255, 56, 92, 0.2);
+}
+
+.hero-search a:focus,
+.hero-search a:focus-visible {
+  outline: 3px solid rgba(255, 56, 92, 0.86);
+  outline-offset: 4px;
 }
 
 .app-preview {
@@ -515,21 +558,21 @@ h3 {
   border-radius: 34px;
   padding: 18px;
   background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.26);
-  backdrop-filter: blur(20px);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(6px);
 }
 
 body[data-design="soft"] .phone-shell {
   border: 1px solid rgba(255, 255, 255, 0.38);
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.24);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.16);
 }
 
 body[data-design="figma"] .phone-shell {
   border-color: rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 34px 90px rgba(65, 49, 139, 0.28);
+  box-shadow: 0 16px 44px rgba(185, 28, 69, 0.12);
 }
 
 .phone-shell__top {
@@ -552,13 +595,13 @@ body[data-design="figma"] .phone-shell {
   margin-top: 16px;
   border-radius: var(--radius-card);
   background: #fff;
-  box-shadow: 0 14px 34px rgba(34, 34, 34, 0.12);
+  box-shadow: 0 7px 18px rgba(34, 34, 34, 0.08);
 }
 
 body[data-design="soft"] .phone-card,
 body[data-design="soft"] .phone-recipe {
   background: rgba(255, 250, 242, 0.86);
-  box-shadow: 0 14px 38px rgba(55, 31, 18, 0.16);
+  box-shadow: 0 8px 20px rgba(55, 31, 18, 0.09);
 }
 
 .phone-card {
@@ -634,14 +677,14 @@ body[data-design="soft"] .phone-recipe {
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   animation: float 4s ease-in-out infinite;
 }
 
 body[data-design="figma"] .floating {
   border-color: rgba(255, 255, 255, 0.78);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 240, 251, 0.72));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 240, 242, 0.72));
 }
 
 .floating--one {
@@ -699,7 +742,7 @@ body[data-design="figma"] .floating {
   border-radius: var(--radius-card);
   background: var(--color-surface);
   box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
 }
 
 .info-card,
@@ -725,7 +768,7 @@ body[data-design="figma"] .floating {
   height: 46px;
   margin-bottom: 18px;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, rgba(255, 56, 92, 0.13), rgba(0, 166, 153, 0.11));
+  background: linear-gradient(135deg, rgba(255, 56, 92, 0.12), rgba(255, 180, 162, 0.14));
   color: var(--color-primary);
 }
 
@@ -783,38 +826,141 @@ body[data-design="figma"] .mood-section {
 
 .mood-grid {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .mood-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   width: 100%;
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px 14px;
-  padding: 20px;
+  grid-template-columns: auto 1fr auto;
+  gap: 5px 14px;
+  min-height: 132px;
+  padding: 20px 18px;
   text-align: left;
   color: var(--color-text);
   cursor: pointer;
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+  transform: translateZ(0);
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+.mood-card::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: var(--mood-accent, var(--color-primary));
+  content: "";
+  opacity: 0.8;
+  transition: width 200ms ease, opacity 200ms ease;
+  z-index: -1;
+}
+
+.mood-card::after {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, var(--mood-glow, rgba(255, 56, 92, 0.07)), transparent 15rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0), var(--mood-wash, rgba(255, 56, 92, 0.04)));
+  content: "";
+  opacity: 0;
+  transition: opacity 200ms ease;
+  z-index: -2;
+}
+
+.mood-card[data-mood="tired"] {
+  --mood-accent: #b91c45;
+  --mood-glow: rgba(185, 28, 69, 0.08);
+  --mood-wash: rgba(185, 28, 69, 0.04);
+}
+
+.mood-card[data-mood="lazy"] {
+  --mood-accent: #d94d63;
+  --mood-glow: rgba(217, 77, 99, 0.08);
+  --mood-wash: rgba(217, 77, 99, 0.04);
+}
+
+.mood-card[data-mood="energy"] {
+  --mood-accent: #ff8a76;
+  --mood-glow: rgba(255, 138, 118, 0.1);
+  --mood-wash: rgba(255, 138, 118, 0.05);
+}
+
+.mood-card[data-mood="cozy"] {
+  --mood-accent: #ff5a5f;
+  --mood-glow: rgba(255, 90, 95, 0.09);
+  --mood-wash: rgba(255, 90, 95, 0.045);
+}
+
+.mood-card[data-mood="treat"] {
+  --mood-accent: #ff385c;
+  --mood-glow: rgba(255, 56, 92, 0.1);
+  --mood-wash: rgba(255, 56, 92, 0.05);
 }
 
 .mood-card:hover,
 .mood-card.is-active {
-  transform: translateY(-3px);
-  border-color: rgba(255, 56, 92, 0.36);
+  transform: translateY(-5px) scale(1.012);
+  border-color: color-mix(in srgb, var(--mood-accent, var(--color-primary)) 62%, transparent);
   background: #fff;
-  box-shadow: var(--shadow-hover);
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--mood-accent, var(--color-primary)) 10%, transparent),
+    var(--shadow-hover);
+}
+
+.mood-card:hover::before,
+.mood-card.is-active::before {
+  width: 12px;
+  opacity: 1;
+}
+
+.mood-card:hover::after,
+.mood-card.is-active::after {
+  opacity: 1;
+}
+
+.mood-card.is-active {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 6px color-mix(in srgb, var(--mood-accent, var(--color-primary)) 24%, transparent),
+    var(--shadow-hover);
+}
+
+.mood-card:focus,
+.mood-card:focus-visible {
+  outline: 0;
+  border-color: var(--mood-accent, var(--color-primary));
+  box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 7px color-mix(in srgb, var(--mood-accent, var(--color-primary)) 34%, transparent),
+    var(--shadow-hover);
+}
+
+.mood-card:focus::before,
+.mood-card:focus-visible::before {
+  width: 12px;
+  opacity: 1;
 }
 
 .mood-card__emoji {
-  grid-row: span 2;
+  grid-row: span 3;
   display: grid;
   place-items: center;
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   border-radius: var(--radius-sm);
-  background: #fff0f3;
-  font-size: 1.28rem;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, var(--mood-accent, var(--color-primary)), rgba(255, 255, 255, 0.7)) border-box;
+  border: 1px solid transparent;
+  box-shadow: 0 5px 12px var(--mood-glow, rgba(255, 56, 92, 0.08));
+  font-size: 1.55rem;
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
 body[data-design="soft"] .mood-card__emoji {
@@ -822,22 +968,86 @@ body[data-design="soft"] .mood-card__emoji {
 }
 
 body[data-design="figma"] .mood-card__emoji {
-  background: linear-gradient(135deg, rgba(123, 97, 255, 0.13), rgba(255, 90, 179, 0.12));
+  background: linear-gradient(135deg, rgba(255, 56, 92, 0.11), rgba(255, 180, 162, 0.13));
+}
+
+.mood-card:hover .mood-card__emoji,
+.mood-card.is-active .mood-card__emoji,
+.mood-card:focus .mood-card__emoji,
+.mood-card:focus-visible .mood-card__emoji {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 7px 16px var(--mood-glow, rgba(255, 56, 92, 0.1));
 }
 
 .mood-card__title {
+  align-self: end;
   font-family: var(--font-heading);
   font-weight: 800;
+  font-size: 1.08rem;
 }
 
 .mood-card__text {
   color: var(--color-muted);
   font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.mood-card__feeling {
+  color: color-mix(in srgb, var(--mood-accent, var(--color-primary)) 78%, #222);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mood-card__hint {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  align-self: center;
+  justify-self: end;
+  border: 1px solid color-mix(in srgb, var(--mood-accent, var(--color-primary)) 30%, transparent);
+  border-radius: var(--radius-pill);
+  padding: 7px 10px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--color-muted);
+  font-size: 0.76rem;
+  font-weight: 900;
+  white-space: nowrap;
+  transition:
+    transform 200ms ease,
+    background 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease;
+}
+
+.mood-card:hover .mood-card__hint,
+.mood-card.is-active .mood-card__hint,
+.mood-card:focus .mood-card__hint,
+.mood-card:focus-visible .mood-card__hint {
+  transform: translateX(2px);
+  border-color: transparent;
+  background: var(--mood-accent, var(--color-primary));
+  color: #fff;
+}
+
+.mood-card.is-active .mood-card__hint {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--mood-accent, var(--color-primary)) 16%, transparent);
 }
 
 .recommendation {
+  position: relative;
   overflow: hidden;
   background: #fff;
+}
+
+.recommendation::before {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 56, 92, 0.16);
+  border-radius: inherit;
+  content: "";
+  pointer-events: none;
+  z-index: 2;
 }
 
 .recommendation.is-changing {
@@ -856,6 +1066,36 @@ body[data-design="figma"] .mood-card__emoji {
   object-fit: cover;
 }
 
+.recommendation__brand-ribbon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: var(--radius-pill);
+  padding: 8px 12px 8px 8px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--color-primary-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 8px 18px rgba(34, 34, 34, 0.08);
+}
+
+.recommendation__brand-ribbon span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--gradient-cta);
+  color: #fff;
+  font-size: 0.72rem;
+}
+
 .effect-pill {
   position: absolute;
   left: 18px;
@@ -865,20 +1105,75 @@ body[data-design="figma"] .mood-card__emoji {
   background: rgba(34, 34, 34, 0.78);
   color: #fff;
   font-weight: 900;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
 }
 
 .recommendation__body {
   padding: 26px;
 }
 
+.recommendation__brand-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 56, 92, 0.12);
+  border-radius: calc(var(--radius-card) - 6px);
+  padding: 12px;
+  background:
+    linear-gradient(135deg, rgba(255, 56, 92, 0.08), rgba(255, 180, 162, 0.12)),
+    #fff;
+}
+
+.recommendation__brand-lockup {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 12px;
+}
+
+.recommendation__mark {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    var(--gradient-cta) border-box;
+  border: 2px solid transparent;
+  box-shadow: 0 6px 16px rgba(255, 56, 92, 0.12);
+  font-size: 1.2rem;
+}
+
 .recommendation__kicker {
-  margin: 0 0 10px;
+  margin: 0 0 3px;
   color: var(--color-primary);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.recommendation__brand-lockup strong {
+  display: block;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.recommendation__score {
+  flex: 0 0 auto;
+  border-radius: var(--radius-pill);
+  padding: 8px 11px;
+  background: var(--color-text);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  white-space: nowrap;
+  box-shadow: 0 5px 14px rgba(34, 34, 34, 0.1);
 }
 
 .recommendation__body h3 {
@@ -944,7 +1239,7 @@ body[data-design="soft"] .recipes {
 }
 
 body[data-design="figma"] .recipes {
-  background: linear-gradient(180deg, #fff, #f7f5ff);
+  background: linear-gradient(180deg, #fff, #fff4f6);
 }
 
 .recipe-grid {
@@ -960,8 +1255,18 @@ body[data-design="figma"] .recipes {
 }
 
 .recipe-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-6px);
+  border-color: rgba(255, 56, 92, 0.28);
+  box-shadow:
+    0 0 0 2px rgba(255, 56, 92, 0.08),
+    var(--shadow-hover);
+}
+
+.recipe-card:focus-within {
+  border-color: rgba(255, 56, 92, 0.34);
+  box-shadow:
+    0 0 0 3px rgba(255, 56, 92, 0.16),
+    var(--shadow-hover);
 }
 
 .recipe-card img {
@@ -987,9 +1292,9 @@ body[data-design="figma"] .recipes {
   font-weight: 900;
 }
 
-.tag--green {
-  background: rgba(0, 166, 153, 0.12);
-  color: #006c63;
+.tag--berry {
+  background: rgba(217, 77, 99, 0.12);
+  color: #8f1d37;
 }
 
 .tag--peach {
@@ -1003,8 +1308,8 @@ body[data-design="figma"] .recipes {
 }
 
 .tag--orange {
-  background: rgba(255, 180, 0, 0.2);
-  color: #8a4e00;
+  background: rgba(255, 138, 118, 0.2);
+  color: #963328;
 }
 
 .review-card {
@@ -1030,8 +1335,8 @@ body[data-design="figma"] .recipes {
   font-weight: 900;
 }
 
-.avatar--green {
-  background: linear-gradient(135deg, #00a699, #8ce2d8);
+.avatar--berry {
+  background: linear-gradient(135deg, #d94d63, #ffb4a2);
 }
 
 .avatar--pink {
@@ -1057,22 +1362,22 @@ body[data-design="figma"] .final-cta {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 16% 26%, rgba(255, 56, 92, 0.34), transparent 22rem),
-    radial-gradient(circle at 82% 18%, rgba(0, 166, 153, 0.2), transparent 24rem);
+    radial-gradient(circle at 16% 26%, rgba(255, 56, 92, 0.3), transparent 22rem),
+    radial-gradient(circle at 82% 18%, rgba(255, 180, 162, 0.18), transparent 24rem);
   content: "";
 }
 
 body[data-design="soft"] .final-cta::before {
   background:
-    radial-gradient(circle at 16% 26%, rgba(251, 123, 77, 0.34), transparent 22rem),
-    radial-gradient(circle at 82% 18%, rgba(130, 184, 116, 0.22), transparent 24rem);
+    radial-gradient(circle at 16% 26%, rgba(255, 90, 95, 0.3), transparent 22rem),
+    radial-gradient(circle at 82% 18%, rgba(255, 180, 162, 0.2), transparent 24rem);
 }
 
 body[data-design="figma"] .final-cta::before {
   background:
-    radial-gradient(circle at 14% 24%, rgba(123, 97, 255, 0.34), transparent 22rem),
-    radial-gradient(circle at 82% 20%, rgba(255, 90, 179, 0.28), transparent 24rem),
-    radial-gradient(circle at 54% 92%, rgba(255, 205, 41, 0.2), transparent 20rem);
+    radial-gradient(circle at 14% 24%, rgba(255, 56, 92, 0.3), transparent 22rem),
+    radial-gradient(circle at 82% 20%, rgba(255, 180, 162, 0.22), transparent 24rem),
+    radial-gradient(circle at 54% 92%, rgba(217, 77, 99, 0.14), transparent 20rem);
 }
 
 .final-cta__inner {
@@ -1121,6 +1426,15 @@ body[data-design="figma"] .final-cta::before {
 
 .footer-links a:hover {
   color: var(--color-primary);
+}
+
+.footer-links a:focus,
+.footer-links a:focus-visible,
+.nav-links a:focus,
+.nav-links a:focus-visible {
+  outline: 2px solid rgba(255, 56, 92, 0.78);
+  outline-offset: 5px;
+  border-radius: 8px;
 }
 
 .footer-note {
@@ -1176,10 +1490,10 @@ body[data-design="figma"] .final-cta::before {
 @keyframes glow {
   0%,
   100% {
-    box-shadow: 0 0 0 rgba(251, 123, 77, 0);
+    box-shadow: 0 0 0 rgba(255, 56, 92, 0);
   }
   50% {
-    box-shadow: 0 0 30px rgba(251, 123, 77, 0.34);
+    box-shadow: 0 0 14px rgba(255, 56, 92, 0.16);
   }
 }
 
@@ -1239,7 +1553,7 @@ body[data-design="figma"] .final-cta::before {
     border-radius: var(--radius-card);
     padding: 18px;
     background: rgba(255, 255, 255, 0.98);
-    box-shadow: var(--shadow-soft);
+    box-shadow: 0 8px 22px rgba(34, 34, 34, 0.08);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
@@ -1349,9 +1663,34 @@ body[data-design="figma"] .final-cta::before {
     grid-template-columns: 1fr;
   }
 
+  .mood-card {
+    grid-template-columns: auto 1fr;
+    min-height: 0;
+  }
+
+  .mood-card__emoji {
+    grid-row: span 4;
+  }
+
+  .mood-card__hint {
+    grid-column: 2;
+    grid-row: auto;
+    justify-self: start;
+    margin-top: 4px;
+  }
+
   .recommendation__image-wrap,
   .recommendation__image-wrap img {
     min-height: 250px;
+  }
+
+  .recommendation__brand-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .recommendation__score {
+    align-self: flex-start;
   }
 
   .recommendation__body,
