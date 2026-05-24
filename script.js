@@ -135,6 +135,48 @@ const showRecipeButton = document.querySelector("#show-recipe");
 const suggestAnotherButton = document.querySelector("#suggest-another");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector("[data-nav-links]");
+const designButtons = document.querySelectorAll("[data-design-choice]");
+
+const availableDesigns = ["airbnb", "soft", "figma"];
+
+function saveDesignChoice(design) {
+  try {
+    localStorage.setItem("moodmeals-design", design);
+  } catch (error) {
+    // localStorage can be unavailable in strict private browsing modes.
+  }
+}
+
+function loadDesignChoice() {
+  try {
+    return localStorage.getItem("moodmeals-design");
+  } catch (error) {
+    return null;
+  }
+}
+
+function applyDesign(design, shouldSave = true) {
+  const nextDesign = availableDesigns.includes(design) ? design : "airbnb";
+
+  document.body.dataset.design = nextDesign;
+  designButtons.forEach((button) => {
+    const isSelected = button.dataset.designChoice === nextDesign;
+    button.classList.toggle("is-active", isSelected);
+    button.setAttribute("aria-pressed", String(isSelected));
+  });
+
+  if (shouldSave) {
+    saveDesignChoice(nextDesign);
+  }
+}
+
+designButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    applyDesign(button.dataset.designChoice);
+  });
+});
+
+applyDesign(loadDesignChoice() || document.body.dataset.design, false);
 
 let currentMood = "tired";
 const mealIndexes = {

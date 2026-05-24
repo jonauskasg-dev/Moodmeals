@@ -31,7 +31,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-design="airbnb">
     <header class="site-header" aria-label="Основная навигация">
       <nav class="navbar">
         <a class="brand" href="#top" aria-label="Начало MoodMeals">
@@ -44,6 +44,18 @@
           </span>
           <span>MoodMeals</span>
         </a>
+
+        <div class="design-switcher" role="group" aria-label="Переключить дизайн">
+          <button class="design-switcher__button is-active" type="button" data-design-choice="airbnb" aria-pressed="true">
+            Airbnb
+          </button>
+          <button class="design-switcher__button" type="button" data-design-choice="soft" aria-pressed="false">
+            Soft
+          </button>
+          <button class="design-switcher__button" type="button" data-design-choice="figma" aria-pressed="false">
+            Figma
+          </button>
+        </div>
 
         <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
           <span></span>
@@ -80,6 +92,21 @@
             <div class="hero__actions">
               <a class="button" href="#moods">Найти мое блюдо</a>
               <a class="button button--ghost" href="#how-it-works">Как это работает?</a>
+            </div>
+            <div class="hero-search" aria-label="Быстрый подбор MoodMeal">
+              <span>
+                <strong>Настроение</strong>
+                Уют, энергия или праздник
+              </span>
+              <span>
+                <strong>Время</strong>
+                8-35 минут
+              </span>
+              <span>
+                <strong>Вайб</strong>
+                Домашне и красиво
+              </span>
+              <a href="#moods" aria-label="Перейти к выбору настроения">→</a>
             </div>
           </div>
 
@@ -402,6 +429,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=design-switcher"></script>
   </body>
 </html>
